@@ -39,8 +39,7 @@ def speak(text):
     os.remove("temp.mp3") 
 
 def aiProcess(command):
-    client = OpenAI(api_key="your api key here",
- )
+    client = OpenAI(api_key="your api key here")
 
     completion = client.chat.completions.create(
     model="gpt-3.5-turbo",
